@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="bg-center bg-cover bg-fixed bg-sky-300 bg-[url(./medias/blue_sun_burst_with_light_effect_and_stars_background_XS.webp)] sm:bg-[url(./medias/blue_sun_burst_with_light_effect_and_stars_background_S.webp)] md:bg-[url(./medias/blue_sun_burst_with_light_effect_and_stars_background_L.webp)] lg:bg-[url(./medias/blue_sun_burst_with_light_effect_and_stars_background_M.webp)] xl:bg-[url(./medias/blue_sun_burst_with_light_effect_and_stars_background_XL.webp)] 2xl:bg-[url(./medias/blue_sun_burst_with_light_effect_and_stars_background_XXL.webp)] text-stone-800">
+<html lang="fr" class="bg-center bg-cover bg-fixed bg-sky-300 text-stone-800">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNRPK8MZQ3"></script>
   <script>
@@ -10,26 +10,30 @@
     gtag('config', 'G-PNRPK8MZQ3');
   </script>
   <!-- <meta name="robots" content="noindex, noimageindex, noarchive, nocache"> -->
-   <meta name="description" content="Portefolio de Frédéric LESAGE">
+  <meta name="description" content="Portefolio de Frédéric LESAGE - Développeur Front-end">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frédéric Lesage - Développeur Front-end</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/combine/npm/daisyui@5/components/tooltip.css,npm/daisyui@5/theme/light.css" rel="stylesheet" type="text/css" />
-  <link href="./medias/styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha:wght@400&display=swap" rel="stylesheet">
+  <link href="./medias/styles.css" media="all" rel="stylesheet" />
+  <style media="print">
+    html {
+      background-color: white !important;
+      background-image: none;
+    }
+  </style>
 </head>
 <body class="h-screen max-h-screen text-stone-800">
   <div class="h-full">
 
     <header class="content-center grid justify-center min-h-screen" role="banner">
-      <h1 class="bg-sky-300/70 font-bold p-4 rounded-xl text-4xl">
-        <span class="text-3xl">Bonjour!</span><br />
-        Je suis Frédéric LESAGE<br /><br />
-        <span class="font-mono font-normal text-2xl">Développeur Front-end</span>
-      </h1>
+      <div class="bg-sky-300/70 p-4 rounded-xl text-center sm:w-[75vw]">
+        <h1 class="font-bold"><span class="text-3xl">Bonjour!</span><br /><span class="text-4xl">Je suis Frédéric LESAGE</span></h1><br /><br />
+        <span class="font-mono text-2xl">Développeur Front-end</span>
+      </div>
     </header>
 
     <section aria-labelledby="titre-section" class="content-center grid justify-center min-h-screen" role="main">
@@ -109,7 +113,7 @@
 
           <div class="col-row-2 col-span-1 gap-2 grid auto-rows-min justify-center p-2 rounded-xl transition duration-300 hover:bg-stone-100">
             <div class="fill-stone-700 h-32 overflow-hidden">
-              <img alt="Image d'illustration pour le site https://alliancefrancophone.frenchparadise.net" class="max-h-full mx-auto" src="./medias/alliance-francophone-interguilde.webp" />
+              <img alt="Image d'illustration pour le site https://alliancefrancophone.frenchparadise.net" class="max-h-full mx-auto" height="128" loading="lazy" src="./medias/alliance-francophone-interguilde.webp" width="228" />
             </div>
             <span class="break-all font-semibold">Webmaster de <a class="underline" href="https://www.frenchparadise.net" target="_blank">www.frenchparadise.net</a>.</span>
             <span class="break-word">Un site bilingue en rapport avec l'univers du jeu Age of Conan.</span>
@@ -160,7 +164,7 @@
 
           <div class="col-row-2 col-span-1 gap-2 grid auto-rows-min justify-center p-2 rounded-xl transition duration-300 hover:bg-stone-100">
             <div class="fill-stone-700 h-32 overflow-hidden">
-              <img alt="Image d'illustration pour le site https://background-remover.frenchparadise.net" class="max-h-full mx-auto" src="./medias/background-remover.webp" />
+              <img alt="Image d'illustration pour le site https://background-remover.frenchparadise.net" class="max-h-full mx-auto" height="128" loading="lazy" src="./medias/background-remover.webp" width="200" />
             </div>
             <span class="break-all font-semibold">Webmaster de <a class="underline" href="https://background-remover.frenchparadise.net/" target="_blank">background-remover.frenchparadise.net</a>.</span>
             <span class="break-word">Une application permettant d'enlever le fond d'une image via <a class="underline" href="https://onnx.ai/" target="_blank">onnx.ai</a>.</span>
@@ -210,7 +214,7 @@
 
           <div class="col-row-2 col-span-1 gap-2 grid auto-rows-min justify-center p-2 rounded-xl transition duration-300 hover:bg-stone-100">
             <div class="fill-[#712cf9] fill-stone-700 h-32 overflow-hidden">
-              <img alt="Icône d'un livre" class="max-h-full mx-auto" src="./medias/icons/book.svg" />
+              <img alt="Icône d'un livre" class="max-h-full mx-auto" height="512" loading="lazy" src="./medias/icons/book.svg" width="448" />
             </div>
             <span class="break-all font-semibold">Mon portefolio</span>
             <span class="break-word">La page que vous visitez en ce moment même.</span>
@@ -230,7 +234,7 @@
 
           <div class="col-row-2 col-span-1 gap-2 grid auto-rows-min justify-center p-2 rounded-xl transition duration-300 hover:bg-stone-100">
             <div class="fill-stone-700 h-32 overflow-hidden">
-              <img alt="Image d'illustration pour le site https://archives-afi-forum.frenchparadise.net" class="max-h-full mx-auto" src="./medias/archives-alliance-francophone-interguilde.webp" />
+              <img alt="Image d'illustration pour le site https://archives-afi-forum.frenchparadise.net" class="max-h-full mx-auto" height="128" loading="lazy" src="./medias/archives-alliance-francophone-interguilde.webp" width="256" />
             </div>
             <span class="break-all font-semibold">Webmaster de <a class="underline" href="https://archives-afi-forum.frenchparadise.net" target="_blank">archives-afi-forum.frenchparadise.net</a>.</span>
             <span class="break-word">Version archivée du site de l'Alliance Francophone Interguilde dédiée au jeu Age of Conan.</span>
@@ -330,7 +334,7 @@
   </template>
 
   <template id="logoTPL">
-    <img class="max-h-full mx-auto" />
+    <img class="max-h-full mx-auto" loading="lazy" />
   </template>
 
   <template id="TooltipTPL">
@@ -338,10 +342,20 @@
   </template>
 
   <script>
-    if ("content" in document.createElement("template")) {
-      const data = {alt:"Logo de ",path:"./medias/icons/",api:{n:"API",f:"api"},axios:{n:"Axios",f:"Axios"},bootstrap:{n:"Bootstrap",f:"bootstrap"},css:{n:"CSS",f:"CSS"},daisyui:{n:"DaisyUI",f:"DaisyUI"},emblaCarousel:{n:"Embla Carousel",f:"embla_carousel"},expressjs:{n:"ExpressJS",f:"ExpressJS"},figma:{n:"Figma",f:"Figma"},firebase:{n:"Firebase",f:"Firebase"},fontAwesome:{n:"Font Awesome",f:"Font_Awesome"},fullCalendar:{n:"Full Calendar",f:"Full_Calendar"},gcp:{n:"GCP (Google Cloud Platform)",f:"GCP"},github:{n:"Github",f:"github"},html:{n:"HTML",f:"HTML"},htmlAccessibility:{n:"HTML accessibility",f:"HTML_accessibility"},i18next:{n:"i18next",f:"i18next"},javascript:{n:"HTML Javascript",f:"Javascript"},jquery:{n:"JQuery",f:"JQuery"},less:{n:"Less",f:"Less"},mysql:{n:"MySQL",f:"MySQL"},nextjs:{n:"NextJS",f:"NextJS"},
-        nodejs:{n:"NodeJS",f:"NodeJS"},phpmyadmin:{n:"PhpMyAdmin",f:"PhpMyAdmin"},postman:{n:"Postman",f:"Postman"},reactjs:{n:"ReactJS",f:"ReactJS"},seo:{n:"SEO",f:"SEO"},squarespace:{n:"Squarespace",f:"Squarespace"},swagger:{n:"Swagger",f:"Swagger"},tailwindcss:{n:"TailwindCSS",f:"TailwindCSS"},sass:{n:"SASS",f:"SASS"},scss:{n:"SCSS",f:"SCSS"},vs:{n:"Visual Studio",f:"VS"},vsc:{n:"Visual Studio Code",f:"VSC"}};
-      const classes = {card:"col-row-2 col-span-1 gap-2 grid auto-rows-min justify-center p-2 rounded-xl transition duration-300 hover:bg-stone-100",tooltip:"flex items-center"};
+    const data = {alt:"Logo de ",path:"./medias/icons/",api:{n:"API",f:"api",h:800,w:800},axios:{n:"Axios",f:"Axios",h:37.98,w:149.85},bootstrap:{n:"Bootstrap",f:"bootstrap",h:800,w:800},css:{n:"CSS",f:"CSS",h:800,w:800},daisyui:{n:"DaisyUI",f:"DaisyUI",h:404,w:256},emblaCarousel:{n:"Embla Carousel",f:"embla_carousel",h:160,w:160},expressjs:{n:"ExpressJS",f:"ExpressJS",h:773.55,w:1333.33},figma:{n:"Figma",f:"Figma",h:800,w:800},firebase:{n:"Firebase",f:"Firebase",h:800,w:800},fontAwesome:{n:"Font Awesome",f:"Font_Awesome",h:800,w:800},fullCalendar:{n:"Full Calendar",f:"Full_Calendar",h:512,w:512},gcp:{n:"GCP (Google Cloud Platform)",f:"GCP",h:800,w:800},github:{n:"Github",f:"github",h:800,w:800},html:{n:"HTML",f:"HTML",h:800,w:800},htmlAccessibility:{n:"HTML accessibility",f:"HTML_accessibility",h:512,w:512},i18next:{n:"i18next",f:"i18next",h:64,w:64},javascript:{n:"HTML Javascript",f:"Javascript",h:800,w:800},jquery:{n:"JQuery",f:"JQuery",h:800,w:800},less:{n:"Less",f:"Less",h:800,w:800},mysql:{n:"MySQL",f:"MySQL",h:800,w:800},nextjs:{n:"NextJS",f:"NextJS",h:800,w:800},nodejs:{n:"NodeJS",f:"NodeJS",h:800,w:800},phpmyadmin:{n:"PhpMyAdmin",f:"PhpMyAdmin",h:800,w:800},postman:{n:"Postman",f:"Postman",h:800,w:800},reactjs:{n:"ReactJS",f:"ReactJS",h:512,w:512},seo:{n:"SEO",f:"SEO",h:800,w:800},squarespace:{n:"Squarespace",f:"Squarespace",h:800,w:800},swagger:{n:"Swagger",f:"Swagger",h:800,w:800},sass:{n:"SASS",f:"SASS",h:800,w:800},scss:{n:"SCSS",f:"SCSS",h:800,w:800},tailwindcss:{n:"TailwindCSS",f:"TailwindCSS",h:800,w:800},vs:{n:"Visual Studio",f:"VS",h:800,w:800},vsc:{n:"Visual Studio Code",f:"VSC",h:800,w:800}};
+    const classes = {card:"col-row-2 col-span-1 gap-2 grid auto-rows-min justify-center p-2 rounded-xl transition duration-300 hover:bg-stone-100",tooltip:"flex items-center"};
+    const stylesToLazyload = {background:{h:"./medias/background.css",m:"screen"},daisyui:{h:"https://cdn.jsdelivr.net/combine/npm/daisyui@5/components/tooltip.css,npm/daisyui@5/theme/light.css",m:"screen"}};
+
+    function styleLazyload(a) {
+      let b = document.createElement('link');
+      b.href = a.h;
+      b.rel = "stylesheet";
+      b.type = "text/css";
+      b.media = a.m;
+      document.getElementsByTagName('head')[0].appendChild(b);
+    }
+
+    function templates(data,classes) {
 
       const targetElements = document.querySelectorAll("[data-tpl]");
 
@@ -356,9 +370,11 @@
         const isCard = tplValue.toLowerCase().endsWith("card");
         const key = isTooltip ? tplValue.slice(0, -7) : isCard ? tplValue.slice(0, -4) : tplValue;
 
+        const height = data[key]?.h;
         const label = data[key]?.n;
         const file = data[key]?.f;
-        if (!label || !file) continue;
+        const width = data[key]?.w;
+        if (!height || !label || !file || !width) continue;
 
         const cloneCard = document.importNode(cardTPL.content, true);
         const cloneImg = document.importNode(logoTPL.content, true);
@@ -366,7 +382,9 @@
 
         const img = cloneImg.querySelector("img");
         img.setAttribute("alt",data.alt + label);
+        img.setAttribute("height",height);
         img.setAttribute("src",data.path + file + ".svg");
+        img.setAttribute("width",width);
 
         if (isCard) {
           const cardSpan = cloneCard.querySelector("span");
@@ -386,6 +404,12 @@
         }
       }
     }
+
+    (function() {
+      styleLazyload(stylesToLazyload.background);
+      styleLazyload(stylesToLazyload.daisyui);
+      if ("content" in document.createElement("template")) {templates(data,classes)}
+    })();
   </script>
 </body>
 </html>
