@@ -68,39 +68,63 @@
         <h2 class="font-bold text-3xl">Mes compétences</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
 
-          <div data-tpl="apiCard"></div>
-          <div data-tpl="axiosCard"></div>
-          <div data-tpl="bootstrapCard"></div>
+          <h3 class="font-bold col-span-full text-2xl">Langages de programmation &amp; styles</h3>
           <div data-tpl="cssCard"></div>
-          <div data-tpl="daisyuiCard"></div>
-          <div data-tpl="emblaCarouselCard"></div>
-          <div data-tpl="expressjsCard"></div>
-          <div data-tpl="figmaCard"></div>
-          <div data-tpl="firebaseCard"></div>
-          <div data-tpl="fontAwesomeCard"></div>
-          <div data-tpl="fullCalendarCard"></div>
-          <div data-tpl="gcpCard"></div>
-          <div data-tpl="githubCard"></div>
           <div data-tpl="htmlCard"></div>
-          <div data-tpl="htmlAccessibilityCard"></div>
-          <div data-tpl="i18nextCard"></div>
           <div data-tpl="javascriptCard"></div>
-          <div data-tpl="jqueryCard"></div>
           <div data-tpl="lessCard"></div>
-          <div data-tpl="mysqlCard"></div>
-          <div data-tpl="nextjsCard"></div>
-          <div data-tpl="nodejsCard"></div>
-          <div data-tpl="phpmyadminCard"></div>
-          <div data-tpl="postmanCard"></div>
-          <div data-tpl="reactjsCard"></div>
-          <div data-tpl="seoCard"></div>
-          <div data-tpl="squarespaceCard"></div>
-          <div data-tpl="tailwindcssCard"></div>
           <div data-tpl="sassCard"></div>
           <div data-tpl="scssCard"></div>
-          <div data-tpl="swaggerCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Frameworks &amp; Bibliothèques front-end</h3>
+          <div data-tpl="bootstrapCard"></div>
+          <div data-tpl="daisyuiCard"></div>
+          <div data-tpl="jqueryCard"></div>
+          <div data-tpl="nextjsCard"></div>
+          <div data-tpl="reactjsCard"></div>
+          <div data-tpl="tailwindcssCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Back-end &amp; Serveurs</h3>
+          <div data-tpl="expressjsCard"></div>
+          <div data-tpl="nodejsCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Base de données</h3>
+          <div data-tpl="mysqlCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Outils &amp; Environnements de développement</h3>
+          <div data-tpl="githubCard"></div>
+          <div data-tpl="phpmyadminCard"></div>
+          <div data-tpl="postmanCard"></div>
           <div data-tpl="vsCard"></div>
           <div data-tpl="vscCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Design / Prototypage / Diagrammes</h3>
+          <div data-tpl="figmaCard"></div>
+          <div data-tpl="lucidCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">API &amp; communication</h3>
+          <div data-tpl="apiCard"></div>
+          <div data-tpl="axiosCard"></div>
+          <div data-tpl="swaggerCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Plugins &amp; Composants UI</h3>
+          <div data-tpl="emblaCarouselCard"></div>
+          <div data-tpl="fontAwesomeCard"></div>
+          <div data-tpl="fullCalendarCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Web &amp; SEO</h3>
+          <div data-tpl="htmlAccessibilityCard"></div>
+          <div data-tpl="seoCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Internationalisation</h3>
+          <div data-tpl="i18nextCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">Cloud / Hébergement / Déploiement</h3>
+          <div data-tpl="firebaseCard"></div>
+          <div data-tpl="gcpCard"></div>
+
+          <h3 class="font-bold col-span-full text-2xl">CMS &amp; Constructeurs de site</h3>
+          <div data-tpl="squarespaceCard"></div>
 
         </div>
       </div>
@@ -133,6 +157,7 @@
               <div data-tpl="i18nextTooltip"></div>
               <div data-tpl="javascriptTooltip"></div>
               <div data-tpl="lessTooltip"></div>
+              <div data-tpl="lucidTooltip"></div>
               <div data-tpl="mysqlTooltip"></div>
               <div data-tpl="nextjsTooltip"></div>
               <div data-tpl="nodejsTooltip"></div>
@@ -342,7 +367,7 @@
   </template>
 
   <script>
-    const data = {alt:"Logo de ",path:"./medias/icons/",api:{n:"API",f:"api",h:800,w:800},axios:{n:"Axios",f:"Axios",h:37.98,w:149.85},bootstrap:{n:"Bootstrap",f:"bootstrap",h:800,w:800},css:{n:"CSS",f:"CSS",h:800,w:800},daisyui:{n:"DaisyUI",f:"DaisyUI",h:404,w:256},emblaCarousel:{n:"Embla Carousel",f:"embla_carousel",h:160,w:160},expressjs:{n:"ExpressJS",f:"ExpressJS",h:773.55,w:1333.33},figma:{n:"Figma",f:"Figma",h:800,w:800},firebase:{n:"Firebase",f:"Firebase",h:800,w:800},fontAwesome:{n:"Font Awesome",f:"Font_Awesome",h:800,w:800},fullCalendar:{n:"Full Calendar",f:"Full_Calendar",h:512,w:512},gcp:{n:"GCP (Google Cloud Platform)",f:"GCP",h:800,w:800},github:{n:"Github",f:"github",h:800,w:800},html:{n:"HTML",f:"HTML",h:800,w:800},htmlAccessibility:{n:"HTML accessibility",f:"HTML_accessibility",h:512,w:512},i18next:{n:"i18next",f:"i18next",h:64,w:64},javascript:{n:"Javascript",f:"Javascript",h:800,w:800},jquery:{n:"JQuery",f:"JQuery",h:800,w:800},less:{n:"Less",f:"Less",h:800,w:800},mysql:{n:"MySQL",f:"MySQL",h:800,w:800},nextjs:{n:"NextJS",f:"NextJS",h:800,w:800},nodejs:{n:"NodeJS",f:"NodeJS",h:800,w:800},phpmyadmin:{n:"PhpMyAdmin",f:"PhpMyAdmin",h:800,w:800},postman:{n:"Postman",f:"Postman",h:800,w:800},reactjs:{n:"ReactJS",f:"ReactJS",h:512,w:512},seo:{n:"SEO (Search Engine Optimization)",f:"SEO",h:800,w:800},squarespace:{n:"Squarespace",f:"Squarespace",h:800,w:800},swagger:{n:"Swagger",f:"Swagger",h:800,w:800},sass:{n:"SASS",f:"SASS",h:800,w:800},scss:{n:"SCSS",f:"SCSS",h:800,w:800},tailwindcss:{n:"TailwindCSS",f:"TailwindCSS",h:800,w:800},vs:{n:"Visual Studio",f:"VS",h:800,w:800},vsc:{n:"Visual Studio Code",f:"VSC",h:800,w:800}};
+    const data = {alt:"Logo de ",path:"./medias/icons/",api:{n:"API",f:"api",h:800,w:800},axios:{n:"Axios",f:"Axios",h:37.98,w:149.85},bootstrap:{n:"Bootstrap",f:"bootstrap",h:800,w:800},css:{n:"CSS",f:"CSS",h:800,w:800},daisyui:{n:"DaisyUI",f:"DaisyUI",h:404,w:256},emblaCarousel:{n:"Embla Carousel",f:"embla_carousel",h:160,w:160},expressjs:{n:"ExpressJS",f:"ExpressJS",h:773.55,w:1333.33},figma:{n:"Figma",f:"Figma",h:800,w:800},firebase:{n:"Firebase",f:"Firebase",h:800,w:800},fontAwesome:{n:"Font Awesome",f:"Font_Awesome",h:800,w:800},fullCalendar:{n:"Full Calendar",f:"Full_Calendar",h:512,w:512},gcp:{n:"GCP (Google Cloud Platform)",f:"GCP",h:800,w:800},github:{n:"Github",f:"github",h:800,w:800},html:{n:"HTML",f:"HTML",h:800,w:800},htmlAccessibility:{n:"HTML accessibility",f:"HTML_accessibility",h:512,w:512},i18next:{n:"i18next",f:"i18next",h:64,w:64},javascript:{n:"Javascript",f:"Javascript",h:800,w:800},jquery:{n:"JQuery",f:"JQuery",h:800,w:800},less:{n:"Less",f:"Less",h:800,w:800},lucid:{n:"Lucid.app",f:"Lucid",h:73,w:293},mysql:{n:"MySQL",f:"MySQL",h:800,w:800},nextjs:{n:"NextJS",f:"NextJS",h:800,w:800},nodejs:{n:"NodeJS",f:"NodeJS",h:800,w:800},phpmyadmin:{n:"PhpMyAdmin",f:"PhpMyAdmin",h:800,w:800},postman:{n:"Postman",f:"Postman",h:800,w:800},reactjs:{n:"ReactJS",f:"ReactJS",h:512,w:512},seo:{n:"SEO (Search Engine Optimization)",f:"SEO",h:800,w:800},squarespace:{n:"Squarespace",f:"Squarespace",h:800,w:800},swagger:{n:"Swagger",f:"Swagger",h:800,w:800},sass:{n:"SASS",f:"SASS",h:800,w:800},scss:{n:"SCSS",f:"SCSS",h:800,w:800},tailwindcss:{n:"TailwindCSS",f:"TailwindCSS",h:800,w:800},vs:{n:"Visual Studio",f:"VS",h:800,w:800},vsc:{n:"Visual Studio Code",f:"VSC",h:800,w:800}};
     const classes = {card:"col-row-2 col-span-1 gap-2 grid auto-rows-min justify-items-center p-2 rounded-xl transition duration-300 hover:bg-stone-100",tooltip:"flex items-center"};
     const stylesToLazyload = {background:{h:"./medias/background.css",m:"screen"},daisyui:{h:"https://cdn.jsdelivr.net/combine/npm/daisyui@5/components/tooltip.css,npm/daisyui@5/theme/light.css",m:"screen"}};
 
